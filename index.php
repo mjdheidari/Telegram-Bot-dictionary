@@ -32,7 +32,7 @@ if(isset($updates["inline_query"])){
                 "thumb_url" => "https://majidheidari.000webhostapp.com/fatoen.jpg"
             ]
         ];
-        $url= "https://api.telegram.org/bot" . "1018468566:AAEAsHjrxekeECgUNN1MknLsKUTSDg8cnbg" . "/answerInlineQuery?inline_query_id={$queryId}&results=" . json_encode($mResult);
+        $url= "https://api.telegram.org/bot" . "token" . "/answerInlineQuery?inline_query_id={$queryId}&results=" . json_encode($mResult);
         file_get_contents($url);
     }
 }
