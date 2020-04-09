@@ -9,7 +9,7 @@ function Method ($method , array $DATA=[]){
     return $run;
 }
 function Trans ($text){
-    $url = "https://translate.yandex.net/api/v1.5/tr.json/translate?lang=fa-en&key=trnsl.1.1.20200307T105809Z.00b5d7ce3745b32f.62c7133a3e23d9d48657876e44f8d8950f0200a7&text=".$text;
+    $url = "https://translate.yandex.net/api/v1.5/tr.json/translate?lang=fa-en&key=trnsl.1.1.20200307T105809Z.00b5d7ce3745b32f.62cfghfgr5457133a3e23d9d48657876e44f8d8950f0200a7&text=".$text;
     $res = file_get_contents($url);
     return json_decode($res, true);
 }
