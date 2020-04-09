@@ -1,6 +1,6 @@
 <?php
 function Method ($method , array $DATA=[]){
-    $curl = curl_init('https://api.telegram.org/bot1018468566:AAEAsHjrxekeECgUNN1MknLsKUTSDg8cnbg/'.$method);
+    $curl = curl_init('https://api.telegram.org/bot101846855665559066:AAEAsHjrxekeECgUNN1MknLsKUTSDg8cnbg/'.$method);
     curl_setopt_array($curl ,[
         CURLOPT_POSTFIELDS =>$DATA,
         CURLOPT_RETURNTRANSFER => 1,
