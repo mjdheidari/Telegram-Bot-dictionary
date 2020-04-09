@@ -29,7 +29,7 @@ if(isset($updates["inline_query"])){
                 "title" => $matn['text'][0],
                 "input_message_content" => ["message_text" => "معادل انگیلیسی عبارت : \n".$queryText . " \n " . "برابر است با : ".$matn['text'][0]],
                 "description"=>"معادل عبارت : "." ".$queryText,
-                "thumb_url" => "https://majidheidari.000webhostapp.com/fatoen.jpg"
+                "thumb_url" => "https://mjdheidari.ir/fatoen.jpg"
             ]
         ];
         $url= "https://api.telegram.org/bot" . "token" . "/answerInlineQuery?inline_query_id={$queryId}&results=" . json_encode($mResult);
